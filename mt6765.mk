@@ -87,6 +87,10 @@ PRODUCT_PACKAGES += \
     libstdc++_vendor \
     libpng.vendor
 
+# CAS
+PRODUCT_PACKAGES += \
+    android.hardware.cas@1.2-service-lazy
+
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
