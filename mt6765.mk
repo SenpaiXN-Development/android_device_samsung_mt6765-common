@@ -339,10 +339,14 @@ PRODUCT_PACKAGES += \
     libtextclassifier_hash.vendor
 
 # Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal-service.mediatek
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/thermal/.ht120.mtc:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.ht120.mtc \
     $(LOCAL_PATH)/thermal/thermal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/thermal.conf \
     $(LOCAL_PATH)/thermal/thermal.off.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/thermal.off.conf \
+    $(LOCAL_PATH)/thermal/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json \
     $(LOCAL_PATH)/thermal/.thermal_policy_00:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_00 \
     $(LOCAL_PATH)/thermal/.thermal_policy_03:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_03 \
     $(LOCAL_PATH)/thermal/.thermal_policy_05:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_05
