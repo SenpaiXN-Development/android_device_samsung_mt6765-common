@@ -1,0 +1,75 @@
+//
+// Copyright (C) 2025 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+// FSTAB
+prebuilt_etc {
+    name: "fstab.mt6765",
+    src: "etc/fstab.mt6765",
+    soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "fstab.mt8768",
+    src: "etc/fstab.mt8768",
+    soc_specific: true,
+}
+
+// Init configuration files
+prebuilt_etc {
+    name: "init.cgroup.rc",
+    src: "etc/init.cgroup.rc",
+    sub_dir: "init/hw",
+    soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "init.mt6765.rc",
+    src: "etc/init.mt6765.rc",
+    sub_dir: "init/hw",
+    soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "init.mt6765.usb.rc",
+    src: "etc/init.mt6765.usb.rc",
+    sub_dir: "init/hw",
+    soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "init.mt8768.rc",
+    src: "etc/init.mt8768.rc",
+    sub_dir: "init/hw",
+    soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "init.recovery.mt6765.rc",
+    src: "etc/init.recovery.mt6765.rc",
+    sub_dir: "init",
+    recovery: true,
+}
+
+prebuilt_etc {
+    name: "init.recovery.mt8768.rc",
+    src: "etc/init.recovery.mt8768.rc",
+    sub_dir: "init",
+    recovery: true,
+}
+
+prebuilt_etc {
+    name: "init_connectivity.rc",
+    src: "etc/init_connectivity.rc",
+    sub_dir: "init/hw",
+    soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "ueventd.mt6765.rc",
+    filename: "ueventd.rc",
+    src: "etc/ueventd.mt6765.rc",
+    soc_specific: true,
+}

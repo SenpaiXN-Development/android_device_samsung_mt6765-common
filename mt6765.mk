@@ -96,6 +96,23 @@ endif
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
+# Rootdir
+PRODUCT_PACKAGES += \
+    fstab.mt6765 \
+    fstab.mt8768 \
+    init.cgroup.rc \
+    init.mt6765.rc \
+    init.mt6765.usb.rc \
+    init.mt8768.rc \
+    init.recovery.mt6765.rc \
+    init.recovery.mt8768.rc \
+    init_connectivity.rc \
+    ueventd.mt6765.rc
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/fstab.mt6765:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6765 \
+    $(LOCAL_PATH)/rootdir/etc/fstab.mt8768:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt8768
+
 # Seccomp
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/android.hardware.media.c2@1.2-extended-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy \
