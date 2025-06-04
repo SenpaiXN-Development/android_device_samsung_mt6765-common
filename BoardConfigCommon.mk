@@ -5,6 +5,8 @@
 
 COMMON_PATH := device/samsung/mt6765-common
 
+BOARD_VENDOR := samsung
+
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
@@ -53,6 +55,9 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_NO_GCC := true
 TARGET_KERNEL_SOURCE := kernel/samsung/mt6765
+
+# Keymaster
+TARGET_KEYMASTER_VARIANT := samsung
 
 # Partitions
 BOARD_USES_METADATA_PARTITION := true

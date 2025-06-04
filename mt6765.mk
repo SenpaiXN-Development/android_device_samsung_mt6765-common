@@ -163,6 +163,19 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     libhwbinder.vendor
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.0-service.samsung \
+    android.hardware.keymaster@4.0 \
+    android.hardware.keymaster@4.1 \
+    libkeymaster4.vendor \
+    libkeymaster4support.vendor \
+    libkeymaster4_1support.vendor \
+    libkeymaster_messages.vendor \
+    libkeymaster_portable.vendor \
+    libpuresoftkeymasterdevice.vendor \
+    libsoft_attestation_cert.vendor
+
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
