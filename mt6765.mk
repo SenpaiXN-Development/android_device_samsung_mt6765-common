@@ -91,6 +91,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.cas@1.2-service-lazy
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm-service.clearkey \
+    android.hardware.drm@1.0.vendor \
+    android.hardware.drm@1.1.vendor \
+    android.hardware.drm@1.2.vendor \
+    android.hardware.drm@1.3.vendor \
+    android.hardware.drm@1.4.vendor \
+    libdrmclearkeyplugin \
+    libmockdrmcryptoplugin
+
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
