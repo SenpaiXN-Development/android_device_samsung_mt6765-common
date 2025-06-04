@@ -130,6 +130,23 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/agps_profiles_conf2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/agps_profiles_conf2.xml
 
+# Graphics
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.composer@2.1-service \
+    android.hardware.graphics.allocator@4.0 \
+    android.hardware.graphics.allocator@4.0.vendor \
+    android.hardware.graphics.common@1.2.vendor \
+    android.hardware.graphics.mapper@4.0.vendor \
+    android.hardware.memtrack@1.0-service \
+    android.hardware.memtrack@1.0-impl \
+    android.hardware.graphics.common-V1-ndk_platform.vendor \
+    disable_configstore \
+    libdrm \
+    libdrm.vendor \
+    libutilscallstack.vendor \
+    libpower.vendor \
+    libvulkan
+
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
