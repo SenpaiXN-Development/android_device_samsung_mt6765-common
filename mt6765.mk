@@ -18,6 +18,29 @@ PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 # Audio
+USE_XML_AUDIO_POLICY_CONF := 1
+PRODUCT_PACKAGES += \
+    android.hardware.audio.service \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio@6.0-impl \
+    android.hardware.audio@7.0-impl \
+    android.hardware.audio.effect@7.0-impl \
+    android.hardware.bluetooth.audio@2.1-impl \
+    audio.bluetooth.default \
+    audio.r_submix.default \
+    audio.usb.default \
+    libaudioclient_aidl_conversion \
+    libaudiofoundation.vendor \
+    libaudiopreprocessing \
+    libbluetooth_audio_session \
+    libdynproc \
+    libhapticgenerator \
+    libtinycompress \
+    libnbaio_mono \
+    libtinycompress \
+    tinymix \
+    libtinyxml
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/a2dpsink_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dpsink_audio_policy_configuration.xml \
     $(LOCAL_PATH)/audio/audio_device.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_device.xml \
