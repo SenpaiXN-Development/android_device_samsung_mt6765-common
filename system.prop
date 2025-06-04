@@ -1,0 +1,51 @@
+# Audio
+ro.audio.silent=0
+ro.audio.spatializer_enabled=true
+ro.audio.usb.period_us=16000
+ro.camera.sound.forced=0
+
+# Disable iorapd
+ro.iorapd.enable=false
+
+# IPO
+sys.ipo.disable=1
+sys.ipo.pwrdncap=2
+
+# Kernel
+ro.kernel.qemu=0
+ro.kernel.zio=38,108,105,16
+
+# Mediatek
+persist.sys.fuse.passthrough.enable=true
+persist.vendor.pms_removable=1
+persist.vendor.vzw_device_type=0
+persist.vendor.wfc.sys_wfc_support=1
+ro.mediatek.version.branch=alps-mp-u0.mssi1.tc10sp
+ro.mediatek.version.release=alps-mp-u0.mp1.tc10sp-hq.V1.55
+ro.soc.manufacturer=Mediatek
+ro.soc.model=MT8768WT
+ro.vendor.system.mtk_mapi_support=1
+
+# NAV Bar
+qemu.hw.mainkeys=0
+
+# Performance
+ro.mtk_perf_fast_start_win=1
+ro.mtk_perf_response_time=1
+ro.mtk_perf_simple_start_win=1
+
+# RIL
+persist.vendor.mdlog.flush_log_ratio=0
+persist.vendor.mtk.vilte.enable=1
+persist.vendor.pco5.radio.ctrl=0
+persist.vendor.vilte_support=1
+ro.vendor.mtk_telephony_add_on_policy=0
+
+# USB
+ro.sys.usb.bicr=no
+ro.sys.usb.charging.only=yes
+ro.sys.usb.mtp.whql.enable=0
+ro.sys.usb.storage.type=mtp
+
+# Zygote
+ro.zygote.preload.enable=0

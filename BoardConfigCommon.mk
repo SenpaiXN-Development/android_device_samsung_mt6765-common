@@ -86,6 +86,13 @@ TARGET_COPY_OUT_VENDOR := vendor
 BOARD_HAS_MTK_HARDWARE := true
 TARGET_BOARD_PLATFORM := mt6765
 
+# Properties
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
+TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
+ifneq ($(TARGET_IS_WIFI-ONLY),true)
+TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor_ril.prop
+endif
+
 # Recovery
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.mt6765
 BOARD_INCLUDE_RECOVERY_DTBO := true
