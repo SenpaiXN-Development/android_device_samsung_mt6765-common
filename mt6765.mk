@@ -333,6 +333,11 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/mediatek \
     hardware/mediatek/libmtkperf_client
 
+# Text classifier
+PRODUCT_PACKAGES += \
+    libtextclassifier_hash \
+    libtextclassifier_hash.vendor
+
 # Thermal
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/thermal/.ht120.mtc:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.ht120.mtc \
