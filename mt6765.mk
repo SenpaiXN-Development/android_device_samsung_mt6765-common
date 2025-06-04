@@ -176,6 +176,10 @@ PRODUCT_PACKAGES += \
     libpuresoftkeymasterdevice.vendor \
     libsoft_attestation_cert.vendor
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.mt6765-common
+
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
