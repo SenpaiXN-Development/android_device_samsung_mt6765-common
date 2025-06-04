@@ -19,15 +19,15 @@ prebuilt_etc {
 
 // Init configuration files
 prebuilt_etc {
-    name: "init.cgroup.rc",
-    src: "etc/init.cgroup.rc",
+    name: "init.mt6765.rc",
+    src: "etc/init.mt6765.rc",
     sub_dir: "init/hw",
     soc_specific: true,
 }
 
 prebuilt_etc {
-    name: "init.mt6765.rc",
-    src: "etc/init.mt6765.rc",
+    name: "init.mt6765.power.rc",
+    src: "etc/init.mt6765.power.rc",
     sub_dir: "init/hw",
     soc_specific: true,
 }

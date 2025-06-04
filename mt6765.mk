@@ -251,6 +251,20 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml
 endif
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service.xiaomi-libperfmgr \
+    android.hardware.power@1.0.vendor \
+    android.hardware.power@1.1.vendor \
+    android.hardware.power@1.2.vendor \
+    android.hardware.power-V2-ndk_platform.vendor \
+    pixel-power-ext-V1-ndk.vendor \
+    vendor.mediatek.hardware.mtkpower@1.0.vendor \
+    vendor.mediatek.hardware.mtkpower@1.1.vendor \
+    vendor.mediatek.hardware.mtkpower@1.2-service.stub \
+    libmtkperf_client_vendor \
+    libmtkperf_client
+
 # Public libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
@@ -259,8 +273,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.mt6765 \
     fstab.mt8768 \
-    init.cgroup.rc \
     init.mt6765.rc \
+    init.mt6765.power.rc \
     init.mt6765.usb.rc \
     init.mt8768.rc \
     init.recovery.mt6765.rc \
@@ -283,7 +297,9 @@ PRODUCT_COPY_FILES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    hardware/google/interfaces \
+    hardware/google/pixel
 
 # Thermal
 PRODUCT_COPY_FILES += \
