@@ -351,6 +351,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/thermal/.thermal_policy_03:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_03 \
     $(LOCAL_PATH)/thermal/.thermal_policy_05:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_05
 
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb-service.mediatek
+
 # WiFi
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
