@@ -359,7 +359,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.common-V1-ndk_platform.vendor \
     android.hardware.common-V2-ndk_platform.vendor \
+    libbinder-v32 \
     libcrypto-v33 \
+    libhidlbase-v32 \
     libutils-v32 \
     vndservicemanager
 
