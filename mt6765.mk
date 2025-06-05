@@ -358,7 +358,8 @@ PRODUCT_PACKAGES += \
 # VNDK
 PRODUCT_PACKAGES += \
     android.hardware.common-V1-ndk_platform.vendor \
-    android.hardware.common-V2-ndk_platform.vendor
+    android.hardware.common-V2-ndk_platform.vendor \
+    vndservicemanager
 
 # WiFi
 PRODUCT_PACKAGES += \
