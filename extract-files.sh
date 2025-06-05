@@ -38,6 +38,15 @@ function blob_fixup() {
         vendor/bin/mnld|vendor/lib64/libcam.utils.sensorprovider.so)
             "${PATCHELF}" --replace-needed "libsensorndkbridge.so" "libsensorndkbridge-v31.so" "${2}"
             ;;
+        vendor/lib*/lib_SoundAlive_3DPosition_ver202.so)
+            "${PATCHELF_0_17_2}" --add-needed "libc++.so" "${2}"
+            ;;
+        vendor/bin/wvkprov|vendor/lib64/lib3a.flash.so|vendor/lib64/libSQLiteModule_VER_ALL.so)
+            "${PATCHELF_0_17_2}" --add-needed "liblog.so" "${2}"
+            ;;
+        vendor/lib64/libmnl.so)
+            "${PATCHELF}" --add-needed "libcutils.so" "${2}"
+            ;;
     esac
 }
 
