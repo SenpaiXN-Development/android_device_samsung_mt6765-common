@@ -24,6 +24,9 @@ function blob_fixup() {
         vendor/lib64/libkeymaster_helper.so|vendor/lib64/libskeymaster4device.so)
             "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v33.so" "${2}"
             ;;
+        vendor/lib*/hw/vendor.mediatek.hardware.pq@2.11-impl.so)
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
+            ;;
     esac
 }
 
