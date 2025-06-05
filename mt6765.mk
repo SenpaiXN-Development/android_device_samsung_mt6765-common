@@ -355,6 +355,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.usb-service.mediatek
 
+# VNDK
+PRODUCT_PACKAGES += \
+    android.hardware.common-V1-ndk_platform.vendor \
+    android.hardware.common-V2-ndk_platform.vendor
+
 # WiFi
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
