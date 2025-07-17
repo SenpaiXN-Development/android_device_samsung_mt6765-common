@@ -5,6 +5,8 @@
 
 COMMON_PATH := device/samsung/mt6765-common
 
+BUILD_BROKEN_DUP_RULES := true
+
 BOARD_VENDOR := samsung
 
 # APEX
