@@ -1392,6 +1392,9 @@ on property:sys.boot_completed=1
     start pageboostd
     start remosaic_daemon
 
+on property:init.svc.console=running
+    stop console
+
 service pppoe_wlan0 /vendor/bin/launchpppoe
     user root
     group radio cache inet misc
