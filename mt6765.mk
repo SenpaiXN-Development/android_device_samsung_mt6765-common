@@ -332,7 +332,8 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/pixel \
     hardware/lineage/interfaces/power-libperfmgr \
     hardware/mediatek \
-    hardware/mediatek/libmtkperf_client
+    hardware/mediatek/libmtkperf_client \
+    hardware/samsung
 
 # Text classifier
 PRODUCT_PACKAGES += \
@@ -354,7 +355,7 @@ PRODUCT_COPY_FILES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb-service.mediatek
+    android.hardware.usb-service.samsung
 
 # VNDK
 PRODUCT_PACKAGES += \
