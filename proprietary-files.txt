@@ -1641,13 +1641,13 @@ vendor/bin/tzts_daemon
 vendor/etc/init/teegris_v4.rc
 vendor/lib/libTEECommon.so
 vendor/lib/libteecl.so
-vendor/lib/libuuid.so
+vendor/lib/libuuid.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libTEECommon.so
 vendor/lib64/libteecl.so
-vendor/lib64/libuuid.so
+vendor/lib64/libuuid.so;MODULE_SUFFIX=_vendor
 
 # Keymaster
--vendor/lib64/libskeymaster4device.so
+vendor/lib64/libskeymaster4device.so
 vendor/lib/libdecrypt.so
 vendor/lib64/libdecrypt.so
 vendor/lib64/libgrdm.so
@@ -1887,7 +1887,7 @@ vendor/lib64/libMcClient.so
 vendor/lib64/libmtcloader.so
 
 # Wi-Fi
--vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so;FIX_SONAME
+vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so;FIX_SONAME
 vendor/bin/wlan_assistant
 vendor/bin/wmt_launcher
 vendor/bin/wmt_loader
