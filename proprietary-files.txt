@@ -1843,6 +1843,7 @@ vendor/lib64/libsimlock.so
 vendor/lib64/libsimmelock.so
 vendor/lib64/libsysenv.so
 vendor/lib64/vendor.mediatek.hardware.clientapi@1.0.so
+vendor/lib64/vendor.mediatek.hardware.meta@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so
 
 # Sensors
