@@ -1696,7 +1696,6 @@ vendor/lib/libminiui.so
 vendor/lib/libmp3dec_mtk.so
 vendor/lib/libmp4enc_sa.ca7.so
 vendor/lib/libmp4enc_xa.ca7.so
-vendor/lib/libopus.so
 vendor/lib/libpixelflinger.so
 vendor/lib/libpredeflicker_native.so
 vendor/lib/libthha.so
@@ -1704,11 +1703,9 @@ vendor/lib/libvc1dec_sa.ca7.so
 vendor/lib/libvcodec_oal.so
 vendor/lib/libvcodecdrv.so
 vendor/lib/libvcodecdrv_header_stub.so
-vendor/lib/libvorbisidec.so
 vendor/lib/libvp8dec_sa.ca7.so
 vendor/lib/libvp9dec_sa.ca7.so
 vendor/lib/libvpu5.so
-vendor/lib/libvpx.so
 vendor/lib64/AVCSecureVdecCA.so
 vendor/lib64/libadpcmdec_mtk.so
 vendor/lib64/libcodec2_mtk_c2store.so
