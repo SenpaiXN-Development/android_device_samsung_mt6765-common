@@ -176,6 +176,8 @@ PRODUCT_PACKAGES += \
     libpuresoftkeymasterdevice.vendor \
     libsoft_attestation_cert.vendor
 
+$(call soong_config_set,samsungVars,target_keymaster4_library,//vendor/samsung/mt6765-common:libskeymaster4device)
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light-service.mt6765-common
