@@ -76,7 +76,6 @@ ro.vendor.mtk_emmc_support=1
 ro.vendor.mtk_f2fs_enable=1
 
 # Display
-debug.renderengine.backend=skiagl
 debug.sf.auto_latch_unsignaled=0
 debug.sf.enable_gl_backpressure=1
 debug.sf.enable_transaction_tracing=false
