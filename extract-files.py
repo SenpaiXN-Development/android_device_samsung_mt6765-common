@@ -111,6 +111,16 @@ blob_fixups: blob_fixups_user_type = {
        .clear_symbol_version('__aeabi_memmove')
        .clear_symbol_version('__aeabi_memset')
        .clear_symbol_version('__gnu_Unwind_Find_exidx'),
+    (
+        'vendor/lib/hw/vulkan.mt6765.so',
+        'vendor/lib64/hw/vulkan.mt6765.so',
+    ): blob_fixup()
+        .clear_symbol_version('AHardwareBuffer_acquire')
+        .clear_symbol_version('AHardwareBuffer_allocate')
+        .clear_symbol_version('AHardwareBuffer_createFromHandle')
+        .clear_symbol_version('AHardwareBuffer_describe')
+        .clear_symbol_version('AHardwareBuffer_getNativeHandle')
+        .clear_symbol_version('AHardwareBuffer_release'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
