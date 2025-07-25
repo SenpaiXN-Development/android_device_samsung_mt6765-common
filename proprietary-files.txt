@@ -1029,7 +1029,7 @@ vendor/etc/aurisys_config.xml
 vendor/etc/init/audiocmdservice_atci.rc
 vendor/lib/hw/audio.primary.mt6765.so
 vendor/lib/hw/audio.r_submix.mt6765.so
-vendor/lib/hw/awinic.audio.effect.so
+vendor/lib/hw/awinic.audio.effect.so;FIX_SONAME
 vendor/lib/lib_SoundAlive_3DPosition_ver202.so
 vendor/lib/lib_iir.so
 vendor/lib/lib_speech_enh.so
@@ -1056,7 +1056,7 @@ vendor/lib/libsecaudiocoreutils.so
 vendor/lib/libsecaudioinfo.so
 vendor/lib/libsecnativefeature.so
 vendor/lib/libspatializerparamstorage.so
-vendor/lib/libspeech_enh_lib.so
+vendor/lib/libspeech_enh_lib.so;FIX_SONAME
 vendor/lib/libspeechparser_vendor.so
 vendor/lib/soundfx/libaudioeffectoffload.so
 vendor/lib/soundfx/libaudiopreprocessing_mtk.so
@@ -1095,7 +1095,7 @@ vendor/lib64/libsecaudiocoreutils.so
 vendor/lib64/libsecaudioinfo.so
 vendor/lib64/libsecnativefeature.so
 vendor/lib64/libspatializerparamstorage.so
-vendor/lib64/libspeech_enh_lib.so
+vendor/lib64/libspeech_enh_lib.so;FIX_SONAME
 vendor/lib64/libspeechparser_vendor.so
 vendor/lib64/libstereoinfoaccessor_vsdof.so
 vendor/lib64/soundfx/libaudioeffectoffload.so
@@ -1442,12 +1442,12 @@ vendor/lib/egl/libGLESv1_CM_mtk.so;DISABLE_CHECKELF
 vendor/lib/egl/libGLESv2_mtk.so;DISABLE_CHECKELF
 vendor/lib/egl/libMEOW_qt.so
 vendor/lib/egl/libMEOW_trace.so
-vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
+vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so;FIX_SONAME
 vendor/lib/hw/gralloc.rogue.so;DISABLE_CHECKELF
 vendor/lib/hw/memtrack.default.so
 vendor/lib/hw/vendor.mediatek.hardware.mms@1.6-impl.so
 vendor/lib/hw/vendor.mediatek.hardware.pq@2.11-impl.so
-vendor/lib/hw/vulkan.mt6765.so;DISABLE_CHECKELF
+vendor/lib/hw/vulkan.mt6765.so;DISABLE_CHECKELF;FIX_SONAME
 vendor/lib/libIMGegl.so;DISABLE_CHECKELF
 vendor/lib/libJpgEncPipe.so
 vendor/lib/libOpenCL.so
@@ -1501,13 +1501,13 @@ vendor/lib64/egl/libGLESv1_CM_mtk.so
 vendor/lib64/egl/libGLESv2_mtk.so
 vendor/lib64/egl/libMEOW_qt.so
 vendor/lib64/egl/libMEOW_trace.so
-vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
+vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so;FIX_SONAME
 vendor/lib64/hw/gralloc.rogue.so
 vendor/lib64/hw/hwcomposer.mt6765.so
 vendor/lib64/hw/memtrack.default.so
 vendor/lib64/hw/vendor.mediatek.hardware.mms@1.6-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.pq@2.11-impl.so
-vendor/lib64/hw/vulkan.mt6765.so
+vendor/lib64/hw/vulkan.mt6765.so;FIX_SONAME
 vendor/lib64/libIMGegl.so
 vendor/lib64/libJpgEncPipe.so
 vendor/lib64/libOpenCL.so
@@ -1639,10 +1639,10 @@ vendor/lib64/vendor.samsung.hardware.gnss@2.0.so
 vendor/bin/tzdaemon
 vendor/bin/tzts_daemon
 vendor/etc/init/teegris_v4.rc
-vendor/lib/libTEECommon.so
+vendor/lib/libTEECommon.so;FIX_SONAME
 vendor/lib/libteecl.so
 vendor/lib/libuuid.so;MODULE_SUFFIX=_vendor
-vendor/lib64/libTEECommon.so
+vendor/lib64/libTEECommon.so;FIX_SONAME
 vendor/lib64/libteecl.so
 vendor/lib64/libuuid.so;MODULE_SUFFIX=_vendor
 
