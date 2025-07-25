@@ -321,12 +321,12 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
+    android.hardware.sensors@1.0-convert-shared.vendor \
     android.hardware.sensors@2.1.vendor \
     android.frameworks.sensorservice@1.0 \
     android.frameworks.sensorservice@1.0.vendor \
     android.frameworks.sensorservice-V1-ndk \
     android.frameworks.sensorservice-V1-ndk.vendor \
-    libshim_sensors \
     libsensorndkbridge
 
 # Soong namespaces

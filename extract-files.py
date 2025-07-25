@@ -71,7 +71,7 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/bin/mnld',
         'vendor/lib64/libcam.utils.sensorprovider.so',
     ): blob_fixup()
-        .replace_needed('libsensorndkbridge.so', 'libshim_sensors.so'),
+        .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so'),
     (
         'vendor/lib/lib_SoundAlive_3DPosition_ver202.so',
         'vendor/lib64/lib_SoundAlive_3DPosition_ver202.so',
