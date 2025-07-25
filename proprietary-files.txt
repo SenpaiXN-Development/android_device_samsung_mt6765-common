@@ -1451,7 +1451,7 @@ vendor/lib/hw/vulkan.mt6765.so;DISABLE_CHECKELF;FIX_SONAME
 vendor/lib/libIMGegl.so;DISABLE_CHECKELF
 vendor/lib/libJpgEncPipe.so
 vendor/lib/libOpenCL.so
-vendor/lib/libPVRMtkutils.so
+vendor/lib/libPVRMtkutils.so;DISABLE_CHECKELF;DISABLE_DEPS
 vendor/lib/libPVROCL.so
 vendor/lib/libPVRScopeServices.so
 vendor/lib/libbwc.so
@@ -1469,7 +1469,7 @@ vendor/lib/libmml.so
 vendor/lib/libmpvr.so
 vendor/lib/libpq_cust_base.so
 vendor/lib/libpqframework.so
-vendor/lib/libsrv_um.so
+vendor/lib/libsrv_um.so;DISABLE_CHECKELF;DISABLE_DEPS
 vendor/lib/libufwriter.so
 vendor/lib/libusc.so;DISABLE_CHECKELF
 vendor/lib/libvcodec_utility.so
@@ -1511,7 +1511,7 @@ vendor/lib64/hw/vulkan.mt6765.so;FIX_SONAME
 vendor/lib64/libIMGegl.so
 vendor/lib64/libJpgEncPipe.so
 vendor/lib64/libOpenCL.so
-vendor/lib64/libPVRMtkutils.so
+vendor/lib64/libPVRMtkutils.so;DISABLE_CHECKELF;DISABLE_DEPS
 vendor/lib64/libPVROCL.so
 vendor/lib64/libPVRScopeServices.so
 vendor/lib64/libbwc.so
@@ -1531,7 +1531,7 @@ vendor/lib64/libmpvr.so
 vendor/lib64/libpq_cust_base.so
 vendor/lib64/libpqframework.so
 vendor/lib64/libpqparamparser.so
-vendor/lib64/libsrv_um.so
+vendor/lib64/libsrv_um.so;DISABLE_CHECKELF;DISABLE_DEPS
 vendor/lib64/libufwriter.so
 vendor/lib64/libusc.so
 vendor/lib64/libvcodec_utility.so
