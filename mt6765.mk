@@ -326,6 +326,7 @@ PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
     android.frameworks.sensorservice-V1-ndk \
     android.frameworks.sensorservice-V1-ndk.vendor \
+    libshim_sensors \
     libsensorndkbridge
 
 # Soong namespaces
