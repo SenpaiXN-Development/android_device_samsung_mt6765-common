@@ -79,7 +79,6 @@ ro.vendor.mtk_f2fs_enable=1
 debug.sf.auto_latch_unsignaled=0
 debug.sf.enable_gl_backpressure=1
 debug.sf.enable_transaction_tracing=false
-debug.sf.latch_unsignaled=1
 debug.sf.predict_hwc_composition_strategy=0
 ro.hardware.egl=mtk
 ro.hardware.hwcomposer=mtk_common
