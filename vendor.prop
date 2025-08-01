@@ -81,6 +81,7 @@ debug.sf.auto_latch_unsignaled=0
 debug.sf.disable_client_composition_cache=1
 debug.sf.enable_gl_backpressure=1
 debug.sf.enable_transaction_tracing=false
+debug.sf.layer_caching_active_layer_timeout_ms=1000
 debug.sf.predict_hwc_composition_strategy=0
 debug.sf.recomputecrop=0
 ro.hardware.egl=mtk
