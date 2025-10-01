@@ -38,17 +38,6 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
-    (
-        'vendor/lib64/libkeymaster_helper.so',
-        'vendor/lib64/libskeymaster4device.so',
-    ): blob_fixup()
-        .replace_needed('libcrypto.so', 'libcrypto-v33.so'),
-    (
-        'vendor/lib/hw/vendor.mediatek.hardware.pq@2.11-impl.so',
-        'vendor/lib64/hw/vendor.mediatek.hardware.pq@2.11-impl.so',
-    ): blob_fixup()
-        .replace_needed('libutils.so', 'libutils-v32.so'),
-    (
         'vendor/bin/hw/camerahalserver',
     ): blob_fixup()
         .replace_needed('libbinder.so', 'libbinder-v32.so')

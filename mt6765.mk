@@ -165,20 +165,13 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     libhwbinder.vendor
 
-# Keymaster
+# keymint
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.0-service.samsung \
-    android.hardware.keymaster@4.0 \
-    android.hardware.keymaster@4.1 \
-    libkeymaster4.vendor \
-    libkeymaster4support.vendor \
-    libkeymaster4_1support.vendor \
-    libkeymaster_messages.vendor \
-    libkeymaster_portable.vendor \
-    libpuresoftkeymasterdevice.vendor \
-    libsoft_attestation_cert.vendor
+    android.hardware.hardware_keystore.xml
 
-$(call soong_config_set,samsungVars,target_keymaster4_library,//vendor/samsung/mt6765-common:libskeymaster4device)
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml
+
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -303,19 +296,16 @@ endif
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.mt6765 \
-    fstab.mt8768 \
     init.mt6765.rc \
     init.mt6765.power.rc \
     init.mt6765.usb.rc \
-    init.mt8768.rc \
     init.recovery.mt6765.rc \
-    init.recovery.mt8768.rc \
+    init.recovery.samsung.rc \
     init_connectivity.rc \
     ueventd.mt6765.rc
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.mt6765:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6765 \
-    $(LOCAL_PATH)/rootdir/etc/fstab.mt8768:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt8768
+    $(LOCAL_PATH)/rootdir/etc/fstab.mt6765:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6765 
 
 # Seccomp
 PRODUCT_COPY_FILES += \
@@ -364,6 +354,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/thermal/thermal.off.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/thermal.off.conf \
     $(LOCAL_PATH)/thermal/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json \
     $(LOCAL_PATH)/thermal/.thermal_policy_00:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_00 \
+    $(LOCAL_PATH)/thermal/.thermal_policy_01:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_01 \
     $(LOCAL_PATH)/thermal/.thermal_policy_03:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_03 \
     $(LOCAL_PATH)/thermal/.thermal_policy_05:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_05
 
