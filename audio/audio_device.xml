@@ -68,22 +68,6 @@
     <path name="ext_speaker_output" value="turnoff">
         <kctl name="Ext_Speaker_Amp_Switch" value="Off" />
     </path>
-<!--huaqin add for factory speaker by limengxia at 2020/12/7 start-->
-    <!--AW_speaker_L output-->
-    <path name="aw_speaker_l_output" value="turnon">
-        <kctl name="AW_Speaker_AmpL_Switch" value="On" />
-    </path>
-    <path name="aw_speaker_l_output" value="turnoff">
-        <kctl name="AW_Speaker_AmpL_Switch" value="Off" />
-    </path>
-    <!--AW_speaker_R output-->
-    <path name="aw_speaker_r_output" value="turnon">
-        <kctl name="AW_Speaker_AmpR_Switch" value="On" />
-    </path>
-    <path name="aw_speaker_r_output" value="turnoff">
-        <kctl name="AW_Speaker_AmpR_Switch" value="Off" />
-    </path>
-<!--huaqin add for factory speaker by limengxia at 2020/12/7 end-->
     <!--single mic loopback-->
     <path name="loopback_use_single_mic_l_ch" value="turnon">
         <kctl name="loopback_use_single_input" value="Left" />
@@ -174,15 +158,13 @@
         <kctl name="Audio_ADC_1_Switch" value="Off" />
         <kctl name="Audio_ADC_2_Switch" value="Off" />
     </path>
-    <!--huaqin change for handfree use refmic by limengxia at 2020/12/3 start-->
     <path name="builtin_Mic_BackMic" value="turnon">
         <kctl name="Audio_MicSource1_Setting" value="ADC1" />
         <kctl name="Audio_ADC_1_Switch" value="On" />
         <kctl name="Audio_ADC_2_Switch" value="On" />
         <kctl name="Audio_Preamp1_Switch" value="IN_ADC3" />
-        <kctl name="Audio_Preamp2_Switch" value="IN_ADC3" />
+        <kctl name="Audio_Preamp2_Switch" value="IN_ADC1" />
     </path>
-    <!--huaqin change for handfree use refmic by limengxia at 2020/12/3 end-->
     <path name="builtin_Mic_BackMic" value="turnoff">
         <kctl name="Audio_Preamp1_Switch" value="OPEN" />
         <kctl name="Audio_Preamp2_Switch" value="OPEN" />

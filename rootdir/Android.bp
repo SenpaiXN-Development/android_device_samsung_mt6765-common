@@ -11,12 +11,6 @@ prebuilt_etc {
     soc_specific: true,
 }
 
-prebuilt_etc {
-    name: "fstab.mt8768",
-    src: "etc/fstab.mt8768",
-    soc_specific: true,
-}
-
 // Init configuration files
 prebuilt_etc {
     name: "init.mt6765.rc",
@@ -40,13 +34,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.mt8768.rc",
-    src: "etc/init.mt8768.rc",
-    sub_dir: "init/hw",
-    soc_specific: true,
-}
-
-prebuilt_etc {
     name: "init.recovery.mt6765.rc",
     src: "etc/init.recovery.mt6765.rc",
     sub_dir: "init",
@@ -54,8 +41,8 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.recovery.mt8768.rc",
-    src: "etc/init.recovery.mt8768.rc",
+    name: "init.recovery.samsung.rc",
+    src: "etc/init.recovery.samsung.rc",
     sub_dir: "init",
     recovery: true,
 }
