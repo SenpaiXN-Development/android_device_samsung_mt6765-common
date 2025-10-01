@@ -38,6 +38,7 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    (
         'vendor/bin/hw/camerahalserver',
     ): blob_fixup()
         .replace_needed('libbinder.so', 'libbinder-v32.so')
