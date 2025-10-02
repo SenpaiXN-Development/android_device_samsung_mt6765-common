@@ -207,3 +207,30 @@ wifi.tethering.interface=ap0
 
 # Zygote
 zygote.critical_window.minute=10
+
+# RIL
+persist.vendor.md_c2k_cap_dep_check=0
+persist.vendor.mims_support=1
+persist.vendor.mtk_sim_switch_policy=2
+persist.vendor.radio.mtk_ps2_rat=L/W/G
+persist.vendor.radio.mtk_ps3_rat=G
+persist.vendor.radio.smart.data.switch=1
+persist.vendor.vilte_support=0
+persist.vendor.viwifi_support=0
+ro.telephony.default_network=0,0,0,0
+ro.vendor.ap_info_monitor=0
+ro.vendor.md_auto_setup_ims=1
+ro.vendor.md_prop_ver=1
+ro.vendor.mtk_c2k_lte_mode=0
+ro.vendor.mtk_data_config=1
+ro.vendor.mtk_eccci_c2k=1
+ro.vendor.mtk_md_world_mode_support=1
+ro.vendor.mtk_protocol1_rat_config=no
+ro.vendor.mtk_ps1_rat=no
+ro.vendor.mtk_sim_card_onoff=3
+ro.vendor.mtk_single_bin_modem_support=1
+ro.vendor.mtk_world_phone_policy=0
+ro.vendor.num_md_protocol=2
+ro.vendor.pref_scale_enable_cfg=1
+ro.vendor.sim_me_lock_mode=0
+vendor.rild.libargs=-d /dev/ttyC0

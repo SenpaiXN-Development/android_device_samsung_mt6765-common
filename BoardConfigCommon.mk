@@ -42,9 +42,6 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_samsung_mt6765
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(COMMON_PATH)/vintf/framework_compatibility_matrix.xml
 DEVICE_MATRIX_FILE += $(COMMON_PATH)/vintf/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/vintf/manifest.xml
-ifneq ($(TARGET_IS_WIFI-ONLY),true)
-DEVICE_MANIFEST_FILE += $(COMMON_PATH)/vintf/manifest_ril.xml
-endif
 
 # Kernel
 BOARD_KERNEL_IMAGE_NAME := Image.gz
@@ -101,9 +98,6 @@ ENABLE_VENDOR_RIL_SERVICE := true
 # Properties
 TARGET_SYSTEM_PROP += $(COMMON_PATH)/properties/system.prop
 TARGET_VENDOR_PROP += $(COMMON_PATH)/properties/vendor.prop
-ifneq ($(TARGET_IS_WIFI-ONLY),true)
-TARGET_VENDOR_PROP += $(COMMON_PATH)/properties/vendor_ril.prop
-endif
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.mt6765
