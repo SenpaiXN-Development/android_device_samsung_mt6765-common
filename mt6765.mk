@@ -13,8 +13,19 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
+
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage
+
 PRODUCT_PACKAGES += \
-    FrameworkRes-MT6765-Overlay
+    CarrierConfigOverlayMT6765 \
+    FrameworksResOverlayMT6765 \
+    SettingsOverlayMT6765 \
+    SettingsProviderOverlayMT6765 \
+    SystemUIOverlayMT6765 \
+    TelephonyOverlayMT6765 \
+    TetheringConfigOverlayMT6765 \
+    WifiOverlayMT6765
 
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
