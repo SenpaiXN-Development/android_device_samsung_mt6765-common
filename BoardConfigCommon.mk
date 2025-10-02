@@ -40,6 +40,7 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_samsung_mt6765
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(COMMON_PATH)/vintf/framework_compatibility_matrix.xml
+DEVICE_MATRIX_FILE += $(COMMON_PATH)/vintf/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/vintf/manifest.xml
 ifneq ($(TARGET_IS_WIFI-ONLY),true)
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/vintf/manifest_ril.xml
