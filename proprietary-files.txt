@@ -1432,6 +1432,13 @@ vendor/lib64/libDR.so
 vendor/lib64/libmnl.so
 vendor/lib64/vendor.samsung.hardware.gnss@2.0.so
 
+# Media (OMX)
+vendor/etc/mtk_omx_core.cfg
+vendor/etc/somxreg.conf
+vendor/lib/vndk/libstagefright_omx_utils.so
+vendor/lib/libstagefright_omx_vendor.so
+vendor/lib64/libsomxcmn.so
+
 # Gatekeeper
 vendor/bin/tzdaemon
 vendor/bin/tzts_daemon
