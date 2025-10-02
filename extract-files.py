@@ -39,6 +39,10 @@ lib_fixups: lib_fixups_user_type = {
 
 blob_fixups: blob_fixups_user_type = {
     (
+        'vendor/lib64/vendor.mediatek.hardware.pq@2.0.',
+    ): blob_fixup()
+        .replace_needed('libutils.so', 'libutils-v32.so'),
+    (
         'vendor/bin/hw/camerahalserver',
     ): blob_fixup()
         .replace_needed('libbinder.so', 'libbinder-v32.so')
