@@ -16,35 +16,35 @@ prebuilt_etc {
     name: "init.ago.rc",
     src: "etc/init.ago.rc",
     sub_dir: "init/hw",
-    vendor: true,
+    soc_specific: true,
 }
 
 prebuilt_etc {
     name: "init.cgroup.rc",
     src: "etc/init.cgroup.rc",
     sub_dir: "init/hw",
-    vendor: true,
+    soc_specific: true,
 }
 
 prebuilt_etc {
     name: "init.connectivity.common.rc",
     src: "etc/init.connectivity.common.rc",
     sub_dir: "init/hw",
-    vendor: true,
+    soc_specific: true,
 }
 
 prebuilt_etc {
     name: "init.connectivity.rc",
     src: "etc/init.connectivity.rc",
     sub_dir: "init/hw",
-    vendor: true,
+    soc_specific: true,
 }
 
 prebuilt_etc {
     name: "init.modem.rc",
     src: "etc/init.modem.rc",
     sub_dir: "init/hw",
-    vendor: true,
+    soc_specific: true,
 }
 
 prebuilt_etc {
@@ -72,7 +72,7 @@ prebuilt_etc {
     name: "init.project.rc",
     src: "etc/init.project.rc",
     sub_dir: "init/hw",
-    vendor: true,
+    soc_specific: true,
 }
 
 prebuilt_etc {
