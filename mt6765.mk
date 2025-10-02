@@ -301,11 +301,18 @@ PRODUCT_PACKAGES += \
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.mt6765 \
-    init.mt6765.rc \
+    init.ago.rc \
+    init.cgroup.rc \
+    init.connectivity.common.rc \
+    init.connectivity.rc \
+    init.modem.rc \
     init.mt6765.power.rc \
+    init.mt6765.rc \
     init.mt6765.usb.rc \
+    init.project.rc \
     init.recovery.mt6765.rc \
     init.recovery.samsung.rc \
+    init.target.rc \
     init_connectivity.rc \
     ueventd.mt6765.rc
 

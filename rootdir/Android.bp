@@ -13,10 +13,38 @@ prebuilt_etc {
 
 // Init configuration files
 prebuilt_etc {
-    name: "init.mt6765.rc",
-    src: "etc/init.mt6765.rc",
+    name: "init.ago.rc",
+    src: "etc/init.ago.rc",
     sub_dir: "init/hw",
-    soc_specific: true,
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.cgroup.rc",
+    src: "etc/init.cgroup.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.connectivity.common.rc",
+    src: "etc/init.connectivity.common.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.connectivity.rc",
+    src: "etc/init.connectivity.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.modem.rc",
+    src: "etc/init.modem.rc",
+    sub_dir: "init/hw",
+    vendor: true,
 }
 
 prebuilt_etc {
@@ -27,10 +55,24 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.mt6765.rc",
+    src: "etc/init.mt6765.rc",
+    sub_dir: "init/hw",
+    soc_specific: true,
+}
+
+prebuilt_etc {
     name: "init.mt6765.usb.rc",
     src: "etc/init.mt6765.usb.rc",
     sub_dir: "init/hw",
     soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "init.project.rc",
+    src: "etc/init.project.rc",
+    sub_dir: "init/hw",
+    vendor: true,
 }
 
 prebuilt_etc {
@@ -45,6 +87,13 @@ prebuilt_etc {
     src: "etc/init.recovery.samsung.rc",
     sub_dir: "init",
     recovery: true,
+}
+
+prebuilt_etc {
+    name: "init.target.rc",
+    src: "etc/init.target.rc",
+    sub_dir: "init",
+    system_ext_specific: true,
 }
 
 prebuilt_etc {
