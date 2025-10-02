@@ -209,7 +209,7 @@ PRODUCT_PACKAGES += \
     libunwindstack.vendor
 
 # Properties
-include $(LOCAL_PATH)/vendor_logtag.mk
+include $(LOCAL_PATH)/properties/vendor_logtag.mk
 
 # Permissions
 PRODUCT_COPY_FILES += \
