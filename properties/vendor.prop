@@ -11,7 +11,7 @@ vendor.af.threshold.src_and_effect_count=5
 
 # Bluetooth
 bluetooth.device.class_of_device=90,2,12
-bluetooth.device.default_name=Galaxy Tab A7 Lite
+bluetooth.device.default_name=Galaxy A04e
 bluetooth.hci.erroneous_data_reporting.enabled=false
 bluetooth.profile.a2dp.source.enabled=true
 bluetooth.profile.asha.central.enabled=false
@@ -87,7 +87,7 @@ debug.sf.recomputecrop=0
 ro.hardware.egl=mtk
 ro.hardware.hwcomposer=mtk_common
 ro.opengles.version=196610
-ro.sf.lcd_density=213
+ro.sf.lcd_density=300
 ro.surface_flinger.enable_frame_rate_override=false
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.has_HDR_display=false
@@ -163,7 +163,7 @@ ro.vendor.mtk_config_max_dram_size=0x800000000
 ro.vendor.mtk_exchange_support=1
 ro.vendor.platform=MTK
 ro.vendor.soc.manufacturer=Mediatek
-ro.vendor.soc.model=MT8768WT
+ro.vendor.soc.model=MT6765V
 security.securehw.available=false
 security.securenvm.available=false
 
